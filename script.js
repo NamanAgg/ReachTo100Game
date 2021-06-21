@@ -4,6 +4,7 @@
 // - BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
 // - The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
 // - The first player to reach 100 points on GLOBAL score wins the game
+//https://namanagg.github.io/ReachTo100Game/
 
 
 
@@ -17,6 +18,7 @@ let diceEl = document.querySelector('.dice');
 let btnNew = document.querySelector('.btn.new');
 let btnRoll = document.querySelector('.btn.roll');
 let btnHold = document.querySelector('.btn.hold');
+
 
 let scores, currentScore, activePlayer, playing;
 
@@ -91,3 +93,11 @@ btnHold.addEventListener('click', function () {
 
 
 btnNew.addEventListener('click', init);
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
